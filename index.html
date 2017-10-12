@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Weather Search</title>
+	<link rel="stylesheet" type="text/css" href="./main.css">
+	<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+	<header>
+		<h1>Weather Search Project</h1>
+	</header>
+	<main>
+		<section name="instructions" class="instructions" role="instructions">
+		<title>Instructions</title>
+		<p>To find the current weather in the city of your choice, enter it in the box below and hit submit.</p>
+		</section>
+		<form class="js-search-area" role="search">
+			<input type="text" class="js-city-search" placeholder="Raleigh">
+			<button class="submit" role="submit button">submit</button>
+		</form>
+        <h2>Results</h2>
+		<div class="js-search-results" ></div>
+	</main>
+<script src="index.js"></script>
+</body>
+</html>
