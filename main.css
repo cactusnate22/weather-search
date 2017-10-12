@@ -1,13 +1,22 @@
 header {
 box-sizing: border-box;
+border: 3px solid gold;
+border-radius: 4px;
   height: 100px;
   width: auto;
-  background-image: url(https://pixabay.com/photo-37009/;)
-  /*background-color: papayawhip;*/
+  background-color: #efe096;
   font-style: italic;
+  text-align: center;
 }
 
 .instructions,
 .js-search-results {
 font-size: 20px;
+}
+p {
+	background-color: white;
+}
+
+ul {
+	background-color: white;
 }
