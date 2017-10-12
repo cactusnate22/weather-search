@@ -2,7 +2,12 @@ header {
 box-sizing: border-box;
   height: 100px;
   width: auto;
-  /*background-image: https://pixabay.com/photo-37009/;*/
-  background-color: papayawhip;
+  background-image: url(https://pixabay.com/photo-37009/;)
+  /*background-color: papayawhip;*/
   font-style: italic;
+}
+
+.instructions,
+.js-search-results {
+font-size: 20px;
 }
