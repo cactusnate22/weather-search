@@ -22,7 +22,6 @@ function render (data) {
   let minTemp = data.main.temp_min ;
   let maxTemp = data.main.temp_max;
   let humidity = data.main.humidity;
-  console.table(data.weather);
 
 
   let cityData = `
@@ -53,6 +52,48 @@ function watchSubmit() {
    const query = queryTarget.val();
    queryTarget.val("");
    getDataFromApi(query, render);
+  });
+}
+
+$(watchSubmit);
+
+// code to render second search area
+function renderTwo (data) {
+  let cityName = data.name ;
+  let weatherDescription = data.weather[0].description;
+  let currentTemp = data.main.temp;
+  let minTemp = data.main.temp_min ;
+  let maxTemp = data.main.temp_max;
+  let humidity = data.main.humidity;
+
+
+  let cityData = `
+    <div>
+      <ul>
+      <li>The city you searched: ${cityName}</li>
+      <li>The current weather is: ${weatherDescription}</li>
+      <li>The current temperature(Fahrenheit) is: ${currentTemp}</li>
+      <li>The low temperature(Fahrenheit) today is: ${minTemp}</li>
+      <li>The high temperature(Fahrenheit) today is: ${maxTemp}</li>
+      <li>Humidity is ${humidity} %.</li>
+      </ul>
+    </div>
+  `;
+
+
+
+  $('.js-search-results').html(cityData);
+
+}
+
+
+function watchSubmit() {
+  $('.js-search-area second').submit(event=> {
+   event.preventDefault();
+   const queryTarget = $(event.currentTarget).find('.js-city-search');
+   const query = queryTarget.val();
+   queryTarget.val("");
+   getDataFromApi(query, renderTwo);
   });
 }
 

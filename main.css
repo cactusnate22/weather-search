@@ -11,9 +11,9 @@ border-radius: 4px;
 }
 
 img {
-	float: left;
-	height: 70px;
-	width: 100px;
+	float: right;
+	height: 100px;
+	width: 130px;
 }
 
 body {
@@ -34,13 +34,15 @@ p {
 }
 
 ul {
+	box-sizing: border-box;
+	border-radius: 8px;
 	background-color: white;
 }
 
 .js-search-results{
 	box-sizing: border-box;
-	border: 1px dotted black;
-	display: inline-block;
+/*	border: 1px dotted black;
+*/	display: inline-block;
 	width: 400px;
 }
 
