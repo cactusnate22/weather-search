@@ -24,3 +24,14 @@ p {
 ul {
 	background-color: white;
 }
+
+.js-search-results{
+	box-sizing: border-box;
+	border: 1px solid black;
+	display: inline-block;
+	width: 400px;
+}
+
+.city-area {
+	display: inline-block;
+}

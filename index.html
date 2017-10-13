@@ -12,17 +12,31 @@
 		<h1>Weather Search Project</h1>
 	</header>
 	<main>
-		<section name="instructions" class="instructions" role="instructions">
+	  <section name="instructions" class="instructions" role="instructions">
 		<title>Instructions</title>
 		<p>To find the current weather in the city of your choice, enter it in the box below and hit submit.</p>
-		</section>
-		<form class="js-search-area" role="search">
+	  </section>
+<!-- 	  <section class="search-and-results">
+ -->		<div class="city-area">
+		  <form class="js-search-area" role="search">
 			<input type="text" class="js-city-search" placeholder="Raleigh">
 			<button class="submit" role="submit button">submit</button>
-		</form>
-        <h2>Results</h2>
-		<div class="js-search-results" ></div>
-	</main>
+		    </form>
+		    <div class="js-search-results" >
+		    <h2>Results for <em>first</em> city</h2>
+            </div>
+        </div>
+        <div class="city-area">
+          <form class="js-search-area" role="search">
+			<input type="text" class="js-city-search" placeholder="Raleigh">
+			<button class="submit" role="submit button">submit</button>
+		  </form>
+            <div class="js-search-results" >
+		    <h2>Results for <em>second</em> city</h2>
+            </div>
+        </div>
+<!--       </section>
+ -->	</main>
 <script src="index.js"></script>
 </body>
 </html>

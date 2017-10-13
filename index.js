@@ -10,12 +10,12 @@ function getDataFromApi (citySearch, callback) {
   }
 
   $.getJSON(`${BASE_URL}/weather`, query, callback);
+  // $.getJSON(`${BASE_URL}/weather`, query, callback);
+
 }
 
 // function to render data
 function render (data) {
-  // let  weatherData = '<li>@weather-item</li>';
-  // let weatherHtml = '';
   let cityName = data.name ;
   let weatherDescription = data.weather[0].description;
   let currentTemp = data.main.temp;
