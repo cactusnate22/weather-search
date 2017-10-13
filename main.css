@@ -41,8 +41,7 @@ ul {
 
 .js-search-results{
 	box-sizing: border-box;
-/*	border: 1px dotted black;
-*/	display: inline-block;
+	display: inline-block;
 	width: 400px;
 }
 

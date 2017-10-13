@@ -39,15 +39,16 @@ function render (data) {
 
 
 
-  $('.js-search-results').html(cityData);
+  $('.one .js-search-results').html(cityData);
 
 }
 
 
 
 function watchSubmit() {
-  $('.js-search-area').submit(event=> {
+  $('.one .js-search-area').submit(event=> {
    event.preventDefault();
+   console.log('hi');
    const queryTarget = $(event.currentTarget).find('.js-city-search');
    const query = queryTarget.val();
    queryTarget.val("");
@@ -82,13 +83,13 @@ function renderTwo (data) {
 
 
 
-  $('.js-search-results').html(cityData);
+  $('.two .js-search-results').html(cityData);
 
 }
 
 
-function watchSubmit() {
-  $('.js-search-area second').submit(event=> {
+function watchSubmitTwo() {
+  $('.two .js-search-area').submit(event=> {
    event.preventDefault();
    const queryTarget = $(event.currentTarget).find('.js-city-search');
    const query = queryTarget.val();
@@ -97,4 +98,4 @@ function watchSubmit() {
   });
 }
 
-$(watchSubmit);
+$(watchSubmitTwo);
