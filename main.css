@@ -10,7 +10,13 @@ border-radius: 4px;
   text-align: center;
 }
 
-main {
+img {
+	float: left;
+	height: 70px;
+	width: 100px;
+}
+
+body {
 	background-image: url(http://www.powerpointhintergrund.com/uploads/2017/05/blue-sky-background-hd-10.jpeg);
 }
 
@@ -39,6 +45,7 @@ ul {
 }
 
 .city-area {
-	padding: 15px, 20px, 10px, 20px;
+	padding-left: 30px;
+	padding-right: 30px;
 	display: inline-block;
 }
