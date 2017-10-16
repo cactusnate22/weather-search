@@ -10,8 +10,6 @@ function getDataFromApi (citySearch, callback) {
   }
 
   $.getJSON(`${BASE_URL}/weather`, query, callback);
-  // $.getJSON(`${BASE_URL}/weather`, query, callback);
-
 }
 
 // function to render data
@@ -24,7 +22,7 @@ function render (data) {
   let humidity = data.main.humidity;
 
 
-  let cityData = `
+  return `
     <div>
       <ul>
       <li>The city you searched: ${cityName}</li>
@@ -37,65 +35,72 @@ function render (data) {
     </div>
   `;
 
-
-
-  $('.one .js-search-results').html(cityData);
-
+  // $('.one .js-search-results').html(cityData);
 }
 
 
 
 function watchSubmit() {
-  $('.one .js-search-area').submit(event=> {
+  $('.js-search-area').submit(function (event) {
    event.preventDefault();
-   console.log('hi');
-   const queryTarget = $(event.currentTarget).find('.js-city-search');
-   const query = queryTarget.val();
-   queryTarget.val("");
-   getDataFromApi(query, render);
+   console.log('Form submitted');
+
+   const $input = $('.js-city-search', event.currentTarget);
+   const $results = $input.parent().parent().find('.js-search-results');
+
+   getDataFromApi($input.val(), function (data) {
+    const html = render(data);
+
+    $results.html(html);
+   });
+
+   // const queryTarget = $(event.currentTarget).find('.js-city-search');
+   // const query = queryTarget.val();
+   // queryTarget.val("");
+   // getDataFromApi(query, render);
   });
 }
 
 $(watchSubmit);
 
-// code to render second search area
-function renderTwo (data) {
-  let cityName = data.name ;
-  let weatherDescription = data.weather[0].description;
-  let currentTemp = data.main.temp;
-  let minTemp = data.main.temp_min ;
-  let maxTemp = data.main.temp_max;
-  let humidity = data.main.humidity;
+// // code to render second search area
+// function renderTwo (data) {
+//   let cityName = data.name ;
+//   let weatherDescription = data.weather[0].description;
+//   let currentTemp = data.main.temp;
+//   let minTemp = data.main.temp_min ;
+//   let maxTemp = data.main.temp_max;
+//   let humidity = data.main.humidity;
 
 
-  let cityData = `
-    <div>
-      <ul>
-      <li>The city you searched: ${cityName}</li>
-      <li>The current weather is: ${weatherDescription}</li>
-      <li>The current temperature(Fahrenheit) is: ${currentTemp}</li>
-      <li>The low temperature(Fahrenheit) today is: ${minTemp}</li>
-      <li>The high temperature(Fahrenheit) today is: ${maxTemp}</li>
-      <li>Humidity is ${humidity} %.</li>
-      </ul>
-    </div>
-  `;
+//   let cityData = `
+//     <div>
+//       <ul>
+//       <li>The city you searched: ${cityName}</li>
+//       <li>The current weather is: ${weatherDescription}</li>
+//       <li>The current temperature(Fahrenheit) is: ${currentTemp}</li>
+//       <li>The low temperature(Fahrenheit) today is: ${minTemp}</li>
+//       <li>The high temperature(Fahrenheit) today is: ${maxTemp}</li>
+//       <li>Humidity is ${humidity} %.</li>
+//       </ul>
+//     </div>
+//   `;
 
 
 
-  $('.two .js-search-results').html(cityData);
+//   $('.two .js-search-results').html(cityData);
 
-}
+// }
 
 
-function watchSubmitTwo() {
-  $('.two .js-search-area').submit(event=> {
-   event.preventDefault();
-   const queryTarget = $(event.currentTarget).find('.js-city-search');
-   const query = queryTarget.val();
-   queryTarget.val("");
-   getDataFromApi(query, renderTwo);
-  });
-}
+// function watchSubmitTwo() {
+//   $('.two .js-search-area').submit(event=> {
+//    event.preventDefault();
+//    const queryTarget = $(event.currentTarget).find('.js-city-search');
+//    const query = queryTarget.val();
+//    queryTarget.val("");
+//    getDataFromApi(query, renderTwo);
+//   });
+// }
 
-$(watchSubmitTwo);
+// $(watchSubmitTwo);
