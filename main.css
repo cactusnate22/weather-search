@@ -5,16 +5,28 @@ border-radius: 4px;
   height: 100px;
   width: auto;
   background-color: #efe096;
-  font-style: italic;
+  font-family: 'Acme', sans-serif;
+  font-size: 26px;
   text-align: center;
 }
 
-main {
+img {
+	float: right;
+	height: 100px;
+	width: 130px;
+}
+
+body {
 	background-image: url(http://www.powerpointhintergrund.com/uploads/2017/05/blue-sky-background-hd-10.jpeg);
+}
+
+.js-search-area {
+	margin-left: 30px;
 }
 
 .instructions,
 .js-search-results {
+font-family: 'Archivo Narrow', sans-serif;
 font-size: 20px;
 }
 p {
@@ -22,5 +34,19 @@ p {
 }
 
 ul {
+	box-sizing: border-box;
+	border-radius: 8px;
 	background-color: white;
+}
+
+.js-search-results{
+	box-sizing: border-box;
+	display: inline-block;
+	width: 400px;
+}
+
+.city-area {
+	padding-left: 30px;
+	padding-right: 30px;
+	display: inline-block;
 }
