@@ -23,7 +23,7 @@ function render (data) {
 
 
   return `
-    <div>
+    <div class="animated">
       <ul>
       <li>The city you searched: ${cityName}</li>
       <li>The current weather is: ${weatherDescription}</li>

@@ -16,6 +16,10 @@ border-radius: 4px;
   color: orange;
 }
 
+h2 {
+	text-decoration: underline;
+}
+
 img {
 	float: right;
 	height: 100px;
@@ -39,7 +43,8 @@ p {
 	background-color: white;
 }
 
-ul {
+.instructions {
+	margin: 10px;
 	box-sizing: border-box;
 	border-radius: 8px;
 	background-color: white;
@@ -48,6 +53,7 @@ ul {
 
 
 .js-search-results{
+	color: white;
 	box-sizing: border-box;
 	display: inline-block;
 	width: 100%;
