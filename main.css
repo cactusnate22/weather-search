@@ -8,12 +8,22 @@ border-radius: 4px;
   font-family: 'Acme', sans-serif;
   font-size: 26px;
   text-align: center;
+  text-shadow: 2px 2px 8px #111111;
 }
 .site-title {
   font-family: 'Acme', sans-serif;
   font-size: 36px;
   font-weight: bold;
-  color: orange;
+  color: #FF8C00;
+  padding-bottom: 5px;
+}
+
+input .js-city-search {
+	padding-bottom: 10px;
+}
+
+button .submit {
+	padding-bottom: 10px;
 }
 
 h2 {
@@ -55,8 +65,8 @@ p {
 .js-search-results{
 	color: white;
 	box-sizing: border-box;
-	border:1px dotted orange;
-	display: inline-block;
+/*	border:1px dotted orange;
+*/	display: inline-block;
 	width: 100%;
 }
 
