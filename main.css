@@ -55,6 +55,7 @@ p {
 .js-search-results{
 	color: white;
 	box-sizing: border-box;
+	border:1px dotted orange;
 	display: inline-block;
 	width: 100%;
 }
