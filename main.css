@@ -40,8 +40,20 @@ body {
 	background-image: url(http://www.powerpointhintergrund.com/uploads/2017/05/blue-sky-background-hd-10.jpeg);
 }
 
-.js-search-area {
+/*styles NOT working for selectors below--input--?*/
+.js-city-search {
 	margin-left: 30px;
+	width: 180px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 4px
+}
+
+button {
+	height: 30px;
+    width: 70px;
+    font-size: 16px;
+    border-radius: 4px;
 }
 
 .instructions,
