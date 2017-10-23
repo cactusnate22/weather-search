@@ -77,8 +77,7 @@ p {
 .js-search-results{
 	color: white;
 	box-sizing: border-box;
-/*	border:1px dotted orange;
-*/	display: inline-block;
+	display: inline-block;
 	width: 100%;
 }
 
@@ -87,13 +86,10 @@ p {
 	padding-left: 30px;
 	padding-right: 30px;
 	display: inline-block;
-	/*width: 100%;*/
 }
 
 @media only screen and (max-width: 640px) {
-/*.js-search-results {
-	width: 40%;
-}*/
+
 .city-area {
 	width: 45%;
 }
@@ -107,7 +103,3 @@ img {
 }
 
 
-.orange-box {
-	padding: 10px;
-	background: orange;
-}
