@@ -3,7 +3,7 @@ const BASE_URL = 'https://api.openweathermap.org/data/2.5';
 function getDataFromApi (citySearch, callback) {
   let query = {
     APPID: "712e536a903b255041854df8a4537f82",
-    q: citySearch, 
+    q: citySearch,
     units: 'imperial'
   }
 
@@ -21,7 +21,7 @@ function render (data) {
 
 
   return `
-    <div class="animated">
+    <div class="">
       <ul>
       <li>The city you searched: ${cityName}</li>
       <li>The current weather is: ${weatherDescription}</li>
@@ -47,9 +47,9 @@ function watchSubmit() {
     const html = render(data);
 
     $results.html(html);
+    $results.addClass('zoomInDown');
    });
   });
 }
 
 $(watchSubmit);
-

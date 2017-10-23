@@ -1,51 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>Weather Search</title>
-	<link rel="stylesheet" type="text/css" href="vendor/bulma/css/bulma.css">
-	<link href="https://fonts.googleapis.com/css?family=Acme|Archivo+Narrow|Encode+Sans+Expanded" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="./animate.css">
-	<link rel="stylesheet" type="text/css" href="./main.css">
-	<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
-</head>
-<body>
-	<header>
-		<img src="clouds-37009__480.png" alt="clipart of sun and cloud">
-		<h1 class="site-title">Weather Search Project: <br>
-		A Tale of Two Cities...</h1>
-	</header>
-  <main>
-	  <section name="instructions" class="instructions" role="instructions">
-		<h2>Instructions:</h2>
-		<p><i>To find the current weather in the city of your choice, enter it in the box below and hit submit. Next, enter another city name into the second search area to compare the weather in the two cities.</i></p>
-	  </section>
-	  <div class="columns">
-	  	<div class="column">
-		  <div class="city-area one">
-		    <form class="js-search-area" role="search">
-			<input type="text" class="js-city-search" placeholder="Raleigh">
-			<button class="submit" role="submit button">submit</button>
-		    </form>
-		    <div class="js-search-results animated" >
-		    <h2>Results for <em>first</em> city</h2>
-          </div>
-        </div>
-      </div>
-	  	<div class="column">
-          <div class="city-area two">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Weather Search</title>
+    <link rel="stylesheet" type="text/css" href="vendor/bulma/css/bulma.css">
+    <link href="https://fonts.googleapis.com/css?family=Acme|Archivo+Narrow|Encode+Sans+Expanded" rel="stylesheet">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="./animate.css"> -->
+    <link rel="stylesheet" type="text/css" href="./main.css">
+    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <img src="clouds-37009__480.png" alt="clipart of sun and cloud">
+      <h1 class="site-title">
+        Weather Search Project:<br>
+        A Tale of Two Cities...
+      </h1>
+    </header>
+    <main>
+      <section name="instructions" class="instructions" role="instructions">
+      <h2>Instructions:</h2>
+      <p><i>To find the current weather in the city of your choice, enter it in the box below and hit submit. Next, enter another city name into the second search area to compare the weather in the two cities.</i></p>
+      </section>
+      <div class="columns">
+        <div class="column">
+        <div class="city-area one">
           <form class="js-search-area" role="search">
-			<input type="text" class="js-city-search" placeholder="Raleigh">
-			<button class="submit" role="submit button">submit</button>
-		  </form>
-            <div class="js-search-results animated" >
-		    <h2>Results for <em>second</em> city</h2>
+        <input type="text" class="js-city-search" placeholder="Raleigh">
+        <button class="submit" role="submit button">submit</button>
+          </form>
+          <div class="js-search-results animated">
+          <h2>Results for <em>first</em> city</h2>
             </div>
           </div>
         </div>
-    </div>
-  </main>
-<script src="index.js"></script>
-</body>
+        <div class="column">
+            <div class="city-area two">
+            <form class="js-search-area" role="search">
+        <input type="text" class="js-city-search" placeholder="Raleigh">
+        <button class="submit" role="submit button">submit</button>
+        </form>
+              <div class="js-search-results animated" >
+          <h2>Results for <em>second</em> city</h2>
+              </div>
+            </div>
+          </div>
+      </div>
+    </main>
+  <script src="index.js"></script>
+  </body>
 </html>
