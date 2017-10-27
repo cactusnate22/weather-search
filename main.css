@@ -1,14 +1,24 @@
+html {
+  /*background: url(http://www.powerpointhintergrund.com/uploads/2017/05/blue-sky-background-hd-10.jpeg) no-repeat center center fixed;*/
+background: url(http://www.publicdomainpictures.net/pictures/30000/velka/clouds-from-a-plane.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/*http://www.publicdomainpictures.net/pictures/30000/velka/clouds-from-a-plane.jpg*/
+
 header {
 box-sizing: border-box;
 border: 3px solid gold;
 border-radius: 4px;
   height: 150px;
   width: auto;
-  background-color: #efe096;
+  background-color: #FFD700;
   font-family: 'Acme', sans-serif;
   font-size: 26px;
   text-align: center;
-  text-shadow: 2px 2px 8px #111111;
+  /*text-shadow: 2px 2px 8px #111111;*/
 }
 .site-title {
   font-family: 'Acme', sans-serif;
@@ -16,6 +26,9 @@ border-radius: 4px;
   font-weight: bold;
   color: #FF8C00;
   padding-bottom: 5px;
+  padding-top: 5px;
+  text-align: center;
+  vertical-align: middle;
 }
 
 input .js-city-search {
@@ -26,34 +39,55 @@ button .submit {
 	padding-bottom: 10px;
 }
 
+
 h2 {
 	text-decoration: underline;
+  text-align: center;
 }
 
 img {
-	float: right;
+	float: left;
 	height: 100px;
 	width: 130px;
 }
 
-body {
+/*body {
 	background-image: url(http://www.powerpointhintergrund.com/uploads/2017/05/blue-sky-background-hd-10.jpeg);
-}
+  height: 100%;
+  width: 100%;
+}*/
 
 
 .js-city-search {
-	margin-left: 30px;
+  background-color: #FFD700;
+  margin-left: 30px;
 	width: 180px;
-    height: 50px;
-    font-size: 20px;
-    border-radius: 8px
+  height: 50px;
+  font-size: 20px;
+  border-radius: 8px
+}
+
+input:focus {
+outline: none !important;
+  border-color: #FF8C00;
+  box-shadow: 0 0 10px #FF8C00;
 }
 
 button {
-	height: 30px;
-    width: 70px;
-    font-size: 16px;
-    border-radius: 6px;
+  background-color: #FFD700;
+  margin: 7px;
+  height: 50px;
+  width: 70px;
+  font-size: 16px;
+  border-radius: 30px;
+  -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+button:hover {
+  background-color: #FF8C00;
+  color: white;
 }
 
 .instructions,
@@ -75,7 +109,8 @@ p {
 
 
 .js-search-results{
-	color: white;
+margin-top: 15px;
+  color: black;
 	box-sizing: border-box;
 	display: inline-block;
 	width: 100%;
@@ -101,5 +136,3 @@ img {
 	width: 80px;
 }
 }
-
-
