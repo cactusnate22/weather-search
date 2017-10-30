@@ -33,8 +33,22 @@ function render (data) {
     </div>
   `;
 }
+// this function should match a weather icon with conditions returned
 
-
+// function watchCondition {
+//   if (`${weatherDescription}` == 'scattered clouds' || 'clouds') {
+//     return cloudy.png
+//   }
+//   else if (`${weatherDescription}` == 'clear sky') {
+//     return sun.png
+//   }
+//   else if (`${weatherDescription}` == 'snow') {
+//     return snow.png
+//   }
+//   else (`${weatherDescription}` == 'rain') {
+//     return rain.png
+//   }
+// }
 
 function watchSubmit() {
   $('.js-search-area').submit(function (event) {

@@ -12,21 +12,28 @@ header {
 box-sizing: border-box;
 border: 3px solid gold;
 border-radius: 4px;
-  height: 150px;
+  height: 170px;
   width: auto;
   background-color: #FFD700;
   font-family: 'Acme', sans-serif;
   font-size: 26px;
   text-align: center;
-  /*text-shadow: 2px 2px 8px #111111;*/
+  vertical-align: middle;
 }
+
 .site-title {
   font-family: 'Acme', sans-serif;
   font-size: 36px;
   font-weight: bold;
+  text-decoration-style: solid;
   color: #FF8C00;
   padding-bottom: 5px;
   padding-top: 5px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+h1 {
   text-align: center;
   vertical-align: middle;
 }
@@ -50,12 +57,6 @@ img {
 	height: 100px;
 	width: 130px;
 }
-
-/*body {
-	background-image: url(http://www.powerpointhintergrund.com/uploads/2017/05/blue-sky-background-hd-10.jpeg);
-  height: 100%;
-  width: 100%;
-}*/
 
 
 .js-city-search {
