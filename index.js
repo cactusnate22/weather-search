@@ -23,23 +23,42 @@ function render (data) {
   return `
     <div class="">
       <ul>
-      <li>The city you searched: ${cityName}</li>
-      <li>The current weather is: ${weatherDescription}</li>
-      <li>The current temperature(Fahrenheit) is: ${currentTemp}</li>
-      <li>The low temperature(Fahrenheit) today is: ${minTemp}</li>
-      <li>The high temperature(Fahrenheit) today is: ${maxTemp}</li>
-      <li>Humidity is ${humidity} %.</li>
+        <li>The city you searched: ${cityName}</li>
+        <li>The current weather is: ${weatherDescription}</li>
+        <li>The current temperature (Fahrenheit) is: ${currentTemp}</li>
+        <li>The low temperature (Fahrenheit) today is: ${minTemp}</li>
+        <li>The high temperature (Fahrenheit) today is: ${maxTemp}</li>
+        <li>Humidity is ${humidity} %.</li>
       </ul>
     </div>
   `;
 }
 // this function should match a weather icon with conditions returned
 
-// function watchCondition {
-//   if (`${weatherDescription}` == 'scattered clouds' || 'clouds') {
-//     return cloudy.png
+// weatherIcon('asdf')
+//
+// function weatherIcon (weatherCondition) {
+//   var iconUrls = {
+//     mist: 'images/mist.png',
+//     cloudy: 'images/cloudy.png',
+//     'sunny as hell': 'images/sunny-as-hell.png',
+//     sunny: 'images/sunny.png'
 //   }
-//   else if (`${weatherDescription}` == 'clear sky') {
+//
+//   // return iconUrls[weatherCondition]
+//   //   ? iconUrls[weatherCondition]
+//   //   : 'images/unknown-weather.png'
+//
+//   if (iconUrls[weatherCondition]) {
+//     return iconUrls[weatherCondition];
+//   } else {
+//     return 'images/unknown-weather.png';
+//   }
+//
+//   if (`${weatherDescription}` == 'clouds' || 'cloudy') {
+//     return cloudy.png - /Users/nathanash/projects/weather-search/images/cloudy.png
+//   }
+//   else if (`${weatherDescription}` == 'clear') {
 //     return sun.png
 //   }
 //   else if (`${weatherDescription}` == 'snow') {
